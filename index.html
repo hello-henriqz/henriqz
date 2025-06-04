@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>henriqz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         font-family: Verdana, sans-serif;
@@ -14,12 +15,41 @@
         margin: 0;
         text-align: center;
       }
+
       h1 {
         font-weight: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6vw;
+      }
+
+      svg {
+        width: 6vw;
+        height: 6vw;
+        min-width: 24px;
+        min-height: 24px;
+        margin-right: 12px;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 8vw;
+        }
+        svg {
+          width: 8vw;
+          height: 8vw;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>&#x2764; hello.</h1>
+    <h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+        <path fill="hotpink" d="M36 66C36 66 3 43.8 3 24.5 3 13.5 11 6 21.3 6c6.8 0 12.4 4.2 14.7 10.1C38.3 10.2 43.8 6 50.7 6 61 6 69 13.5 69 24.5 69 43.8 36 66 36 66z"/>
+      </svg>
+      hello.
+    </h1>
   </body>
 </html>
